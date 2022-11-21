@@ -1,125 +1,134 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Title</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header container" id="header">
+
+<head>
+  <title>Title</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header container" id="header">
+      <h1>
         <a href="/" class="logo">
           <svg width="68" height="59" viewBox="0 0 68 59" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M68 19.6667L34.0557 0L0 19.6667V59L68 19.6667Z" />
             <path d="M68 59V25.6334L38.9227 42.2083L68 59Z" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M35.6327 45.366L12.25 58.866L11.75 58L35.1327 44.5L35.6327 45.366Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M35.6327 45.366L12.25 58.866L11.75 58L35.1327 44.5L35.6327 45.366Z" />
           </svg>
         </a>
-        <nav class="nav">
-          <a href="#gallery" class="nav_link">gallery</a>
-          <a href="#history" class="nav_link">history</a>
-          <a href="#contactUs" class="nav_link">contact us</a>
-        </nav>
-        <button class="burger_open_btn" id="btnBurger">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 8H48V13H0V8Z" fill="#005BBB" />
-            <path d="M0 21H48V26H0V21Z" fill="#005BBB" />
-            <path d="M48 34H0V39H48V34Z" fill="#005BBB" />
-          </svg>
-        </button>
-        <button class="burger_close_btn" id="btnClose">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M23.9996 19.9646L8.79676 4.76172L5.26123 8.29725L20.4641 23.5001L5.26136 38.7029L8.7969 42.2384L23.9996 27.0357L39.2024 42.2384L42.7379 38.7028L27.5352 23.5001L42.738 8.29726L39.2025 4.76173L23.9996 19.9646Z"
-              fill="white"
-            />
-          </svg>
-        </button>
-      </header>
-      <main>
-        <div id="gallery">
-          <h1 class="is_hidden"></h1>
-          <div class="gallery" id="gallerySlider">
-            <div><img src="img/photo01.png" alt="building" /></div>
-            <div><img src="img/photo02.png" alt="building" /></div>
-            <div><img src="img/photo03.png" alt="building" /></div>
-            <div><img src="img/photo01.png" alt="building" /></div>
-            <div><img src="img/photo02.png" alt="building" /></div>
-          </div>
-          <div class="description container">
-            <p>
-              We are an architectural firm with a long history and extensive experience. Our intention is to help Ukrainians rebuild their homes and buildings even better than they
-              were before the war.
+      </h1>
+      <nav class="nav">
+        <a href="#gallery" class="nav_link">gallery</a>
+        <a href="#history" class="nav_link">history</a>
+        <a href="#contactUs" class="nav_link">contact us</a>
+      </nav>
+      <button class="burger_open_btn" id="btnBurger">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 8H48V13H0V8Z" fill="#005BBB" />
+          <path d="M0 21H48V26H0V21Z" fill="#005BBB" />
+          <path d="M48 34H0V39H48V34Z" fill="#005BBB" />
+        </svg>
+      </button>
+      <button class="burger_close_btn" id="btnClose">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M23.9996 19.9646L8.79676 4.76172L5.26123 8.29725L20.4641 23.5001L5.26136 38.7029L8.7969 42.2384L23.9996 27.0357L39.2024 42.2384L42.7379 38.7028L27.5352 23.5001L42.738 8.29726L39.2025 4.76173L23.9996 19.9646Z"
+            fill="white" />
+        </svg>
+      </button>
+    </header>
+    <main>
+      <div id="gallery">
+        <div class="gallery" id="gallerySlider">
+          <div><img src="img/photo01.png" alt="building" /></div>
+          <div><img src="img/photo02.png" alt="building" /></div>
+          <div><img src="img/photo03.png" alt="building" /></div>
+          <div><img src="img/photo01.png" alt="building" /></div>
+          <div><img src="img/photo02.png" alt="building" /></div>
+        </div>
+        <div class="description container">
+          <p>
+            We are an architectural firm with a long history and extensive experience. Our intention is to help
+            Ukrainians rebuild their homes and buildings even better than they
+            were before the war.
+          </p>
+          <p>Please take a look at our history and contact us if you are intrested. We would be really glad to join the
+            help to Ukraine as we can.</p>
+          <p>Glory to Ukraine!</p>
+        </div>
+      </div>
+      <div id="history" class="container">
+        <h2 class="title">HISTORY</h2>
+        <ul class="history_list">
+          <li class="history_link">
+            <p class="history_text">
+              <span>1890</span> Fusce rhoncus at sapien at sollicitudin. Quisque semper sollicitudin libero eget
+              placerat. Aliquam quis laoreet tellus. In id congue lacus. Nulla
+              vestibulum turpis et nisi consequat, non sagittis purus interdum. Nunc eu dolor urna. Quisque fermentum
+              risus quam, at consectetur leo tincidunt id. Nulla facilisi.
             </p>
-            <p>Please take a look at our history and contact us if you are intrested. We would be really glad to join the help to Ukraine as we can.</p>
-            <p>Glory to Ukraine!</p>
-          </div>
-        </div>
-        <div id="history" class="container">
-          <h2 class="title">HISTORY</h2>
-          <ul class="history_list">
-            <li class="history_link">
-              <p class="history_text">
-                <span>1890</span> Fusce rhoncus at sapien at sollicitudin. Quisque semper sollicitudin libero eget placerat. Aliquam quis laoreet tellus. In id congue lacus. Nulla
-                vestibulum turpis et nisi consequat, non sagittis purus interdum. Nunc eu dolor urna. Quisque fermentum risus quam, at consectetur leo tincidunt id. Nulla facilisi.
-              </p>
-            </li>
-            <li class="history_link">
-              <p class="history_text">
-                <span>1920</span> Aliquam erat volutpat. Curabitur et accumsan odio, eget scelerisque risus. Suspendisse ultrices mattis accumsan. In hac habitasse platea dictumst.
-                In non nisl turpis. Sed sit amet purus odio. Donec aliquam leo a tortor tincidunt, vel molestie neque commodo. Ut pellentesque ut ex pulvinar aliquam. Morbi
-                porttitor, felis quis convallis tincidunt, augue felis euismod lectus, a placerat purus justo eget magna. Mauris neque nisi, pharetra, vehicula non lorem.
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div id="contactUs" class="container">
-          <h2 class="title">CONTACT US</h2>
-          <form action="#" class="contact_us_form">
-            <textarea class="contact_us_textarea" placeholder="type your message here"></textarea>
-            <button class="contact_us_btn">SEND</button>
-          </form>
-        </div>
-      </main>
-    </div>
-    <script type="text/javascript" src="slick/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="slick/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $(".gallery").slick({
-          dots: true,
-          arrows: false,
-          infinite: true,
-          speed: 300,
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          responsive: [
-            {
-              breakpoint: 1025,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-              },
+          </li>
+          <li class="history_link">
+            <p class="history_text">
+              <span>1920</span> Aliquam erat volutpat. Curabitur et accumsan odio, eget scelerisque risus. Suspendisse
+              ultrices mattis accumsan. In hac habitasse platea dictumst.
+              In non nisl turpis. Sed sit amet purus odio. Donec aliquam leo a tortor tincidunt, vel molestie neque
+              commodo. Ut pellentesque ut ex pulvinar aliquam. Morbi
+              porttitor, felis quis convallis tincidunt, augue felis euismod lectus, a placerat purus justo eget magna.
+              Mauris neque nisi, pharetra, vehicula non lorem.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div id="contactUs" class="container">
+        <h2 class="title">CONTACT US</h2>
+        <form action="#" class="contact_us_form">
+          <textarea class="contact_us_textarea" placeholder="type your message here"></textarea>
+          <button class="contact_us_btn">SEND</button>
+        </form>
+      </div>
+    </main>
+  </div>
+  <script type="text/javascript" src="slick/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="slick/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".gallery").slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1025,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
             },
-            {
-              breakpoint: 601,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              },
+          },
+          {
+            breakpoint: 601,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
             },
-          ],
-        })
+          },
+        ],
       })
-    </script>
-  </body>
+    })
+  </script>
+</body>
+
 </html>
